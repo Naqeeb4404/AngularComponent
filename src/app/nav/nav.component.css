@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    background-color: #f5b;
+}
+.sitename{
+    padding: 5px 30px;
+    color: aquamarine;
+}
+.sitemenu{
+    padding: 10px 30px; 
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    margin: 0px 10px;
+}
