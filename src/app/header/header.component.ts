@@ -13,5 +13,8 @@ export class HeaderComponent implements OnInit {
 ngOnInit(): void {
 
 }
-
+slogan: string = 'Your one stop shop foe everything.'
+getSlogan(){
+    return 'This is new slogan for this web application'
+}
 }
