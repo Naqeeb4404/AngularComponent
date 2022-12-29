@@ -14,6 +14,7 @@ ngOnInit(): void {
 
 }
 slogan: string = 'Your one stop shop foe everything.'
+source: string = "/assets/shopping.png";
 getSlogan(){
     return 'This is new slogan for this web application'
 }
