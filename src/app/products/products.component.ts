@@ -10,6 +10,6 @@ export class ProductsComponent implements OnInit{
     throw new Error('Method not implemented.');
   }
 products = [
-  
+  {id:1, name: `Minimalists Analog watch, price: '109', color: 'black',available: 'available', image: */assets/products/product -image-1.jpeg'}
 ];
 }
