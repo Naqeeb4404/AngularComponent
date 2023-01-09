@@ -2,14 +2,14 @@
     <p>number is: {{ item }}</p>
 </div> -->
 
-<div *ngFor="let p of products">
+<div *ngFor="let p of products; let i= index">
     <!-- <p>{{ i }}</p> -->
-    <div class="product-container">
-        <div class="image-container"><img src="" alt="" style="max-height: 50px; max-width: 50px;"></div>
+    <div class="product-container" [ngStyle]="{backgroundColor: p.available === 'Available' ? '#D5F5E3' : '#FADBD8'}">
+        <div class="image-container"><img src="p.image" alt="" style="max-height: 50px; max-width: 50px;"></div>
         <div>
             <div class="name-container"><h6>{{p.name}}</h6></div>
             <div class="detailsContainer">
-                <div class="details">{{ p.available }}</div>
+                <div class="details" [ngStyle]="{color: p.available === 'available' ? 'Green' : 'Red'}"{{ p.available }}></div>
                 <div class="details"><b>Price:</b>${{ p.price }}</div>
                 <div class="details"><b><Color:</b>{{ p.color }}</div>
             </div>
